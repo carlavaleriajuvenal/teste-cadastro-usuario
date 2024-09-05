@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <title>Cadastro de Usuário</title>
+     <!-- Link para o arquivo de estilo CSS -->
+    <link rel="stylesheet" href="css/style.css"> 
+    
+</head>
+
+<body>
+    <div class="container">
+        <!-- Formulário com método POST -->
+         <form  method="POST" action="php/config.php" id="form"> 
+
+                <h1>Cadastro</h1>
+                <!-- Campo para o nome do usuário -->
+                <input type="text" placeholder="Nome" name="nome" id="nome" class="required" oninput="validateName()"> 
+                
+                     <br><br>
+
+                <!-- Campo para o email do usuário -->
+                <input type="email" placeholder="Email" name="email" id="email" class="required" oninput="validateEmail()" >
+                
+                
+                      <br><br>
+
+                <!-- Campo para a senha do usuário -->
+                <input type="password" placeholder="Senha" name="senha" id="senha" class="required" oninput="validatePassword()">
+               
+                     <br><br>
+
+                 <!-- Botão de envio do formulário -->
+                <input class="button" type="submit" name="submit" value="Cadastrar" >
+
+        </form>
+    </div>
+    <!-- Link para o arquivo de script JavaScript -->
+    
+
+    <script defer src="js/main.js"></script>
+</body>
+</html>
